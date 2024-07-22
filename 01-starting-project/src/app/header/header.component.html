@@ -1,0 +1,24 @@
+<nav class="bg-white md:flex md:items-center md:justify-between">
+  <div class="md:justify-between min-h-30">
+    <span class="md:flex md:justify-between md: items-center">
+      <a class="" href="#"><img class="object-contain h-12 w-12" src="../assets/logo_kmk.png" alt=""></a>
+      
+      <a class="inline ml-2" href="#">Aplikasi Sikampret</a>
+    </span>
+  </div>
+  <ul class="flex items-center justify-between">
+        @for (header of MenuList; track $index) {
+        <span class="">
+          <li class="inline-flex items-center justify-between">
+            <ng-icon class="mr-1 scale-y-30 hover:scale-125" name="{{header.icon}}"></ng-icon>
+            <a class="mr-2" href="#">{{header.id}}</a>
+          
+          </li>
+        </span>
+      }
+      
+  
+    
+  </ul>
+
+</nav> 
